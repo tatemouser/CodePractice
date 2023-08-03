@@ -1,12 +1,15 @@
 package main;
+import java.util.List;
+
 import dataTypes.*;
 
 public class Index {
 	public static void main(String[] args) {
-		// HashSet
-		// Given a string s, find the length of the longest substring without repeating characters.
-		HashSetTest temp = new HashSetTest();
-		System.out.println(temp.call("abbkf"));
-		// Returns 3;
+		// Simulates key pad on phone with buttons. Returns all possible combinations of letter combinations digits inputed as a String.
+		HashMapWithCharArray temp = new HashMapWithCharArray();
+		List<String> solutions = temp.letterCombinations("234");
+		for(String vals: solutions) {
+			System.out.println(vals);
+		}
 	}
 }
