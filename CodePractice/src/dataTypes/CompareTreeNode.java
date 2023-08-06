@@ -2,7 +2,7 @@ package dataTypes;
 
 import main.*;
 
-public class CompareTreeNode {
+public class CompareTreeNode { /*
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
@@ -20,5 +20,5 @@ public class CompareTreeNode {
         boolean isRightSame = isSameTree(p.right, q.right);
 
         return isLeftSame && isRightSame;
-    }
+    }*/
 }
