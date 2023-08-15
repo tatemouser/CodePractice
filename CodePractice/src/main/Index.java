@@ -4,12 +4,13 @@ import dataTypes.*;
 
 public class Index {
     public static void main(String[] args) {
-    	OverlappingGrids temp = new OverlappingGrids();
-    	// first two numbers represent the bottom left coordinate and the last two represent the top right.
-    	// If the boxes overlap then the program returns true.
-    	int[] test1 = {0,0,2,2};
-    	int[] test2 = {1,1,3,3};
-    	System.out.println(temp.isRectangleOverlap(test1, test2));
+    	MergeArray temp = new MergeArray();
+    	int[] one = {2,2,3,0,0,0};
+    	int[] two = {1,5,6};
+    	int[] solution = temp.merge(one, 3, two, 3);
     	
+    	for(int sol: solution) {
+    		System.out.println(sol);
+    	}
     }
 }
